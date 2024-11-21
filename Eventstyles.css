@@ -1,0 +1,43 @@
+.NavBar {
+    color: white;
+    background-color: black;
+    width: 100%; 
+    margin: 0;
+    padding: 2vh 4vw; 
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 2vw; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Just to make sure it'll always be top */
+    box-sizing: border-box; 
+    display: flex;
+    justify-content: space-between;
+}
+
+body {
+    padding-top: calc(2vh + 2rem); /* Matches the height of the nav bar dynamically */
+}
+
+.NavSelector {
+    list-style-type: none; /* Remove default bullet points */
+    margin: 0; /* Remove default margins */
+    padding: 0; /* Remove default padding */
+    padding-top: 1rem;
+    display: flex; /* Arrange items in a row */
+    gap: 3rem; /* Add space between items */
+}
+
+.NavSelector li {
+    display: inline; /* Ensures the list items behave inline */
+}
+
+.NavSelector li a:hover {
+    background-color: gray; /* Change background on hover */
+}
+
+/* padding-top: 6.3rem; optimal padding for keeping contents under the navBar */
+.NavBarGap{
+    padding-top: 6.3rem;
+}
