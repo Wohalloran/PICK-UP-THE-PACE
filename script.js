@@ -1,5 +1,3 @@
-
-
 function incrementPlayers() {
     const playerInput = document.getElementById("players");
     let currentValue = parseInt(playerInput.value, 10) || 0; 

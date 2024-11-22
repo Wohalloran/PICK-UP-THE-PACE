@@ -1,3 +1,43 @@
+.NavBar {
+  color: white;
+  background-color: black;
+  width: 100%; 
+  margin: 0;
+  padding: 2vh 4vw; 
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: bold;
+  /* font-size: 2vw;  */
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000; 
+  box-sizing: border-box; 
+  display: flex;
+  justify-content: space-between;
+}
+
+.NavSelector {
+  list-style-type: none; 
+  margin: 0; 
+  padding: 0; 
+  padding-top: 1rem;
+  display: flex; 
+  gap: 3rem; 
+}
+
+.NavSelector li {
+  display: inline; 
+}
+
+.NavSelector li a:hover {
+  background-color: gray; 
+}
+
+.NavBarGap{
+  padding-top: 6.3rem;
+}
+
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -157,9 +197,9 @@ textarea {
 }
 
 input[type="number"] {
-  -moz-appearance: textfield; /* Firefox */
-  -webkit-appearance: none; /* Chrome, Safari, Edge */
-  appearance: none; /* Modern browsers */
+  -moz-appearance: textfield; 
+  -webkit-appearance: none; 
+  appearance: none; 
 }
 
 input[type="number"]::-webkit-inner-spin-button,
@@ -168,3 +208,9 @@ input[type="number"]::-webkit-outer-spin-button {
   appearance: none;
   margin: 0;
 }
+
+
+
+
+
+ 
