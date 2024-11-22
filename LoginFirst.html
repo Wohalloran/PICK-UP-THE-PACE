@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Initial Home Page (before signing in)</title>
-    <link rel="stylesheet" href="InitialHomePageStyles.css">
+    <title>Please log in first</title>
+    <link rel="stylesheet" href="LoginFirstStyles.css">
 </head>
 <div id="NavBar" class="NavBar"><div class="logo">Pick Up <br> ‎ ‎ ‎ The Pace</div>
     <ul class="NavSelector">
@@ -81,19 +81,18 @@
             </div>
         </div>
     </div>
+    <!-- Log in first Popup -->
+    <div class="popup" id="popup">
+        <div class="popup-content">
+            <p>Please sign up/log in first</p>
+            <button onclick="goToLogin()">OKAY</button>
+        </div>
+    </div>
 </body>
 <script>
-    // Redirect to "loginfirst.html" when screen is clicked
-    document.addEventListener('click', function (event) {
-        // Check if the clicked element is not Log In or Sign Up buttons
-        let isLoginSignup =
-            event.target.closest('a[href="login.html"]') ||
-            event.target.closest('a[href="signup.html"]');
-
-        if (!isLoginSignup) {
-            window.location.href = 'LoginFirst.html';
+function goToLogin() {
+    window.location.href = 'login.html';
         }
-    });
 </script>
 </html>
 

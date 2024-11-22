@@ -3,33 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Initial Home Page (before signing in)</title>
-    <link rel="stylesheet" href="InitialHomePageStyles.css">
+    <title>Registered Events</title>
+    <link rel="stylesheet" href="HomePageStyles.css">
 </head>
 <div id="NavBar" class="NavBar"><div class="logo">Pick Up <br> ‎ ‎ ‎ The Pace</div>
     <ul class="NavSelector">
-        <li>Home</li>
+        <li><a href="HomePage.html">Home</a></li>
         <li>Messages</li>
         <li>Search</li>
         <li>Notifications</li>
         <li>Settings</li>
         <li>Profile</li>
-        <li><a href="login.html">Log In</a></li>
-        <li><a href="signup.html">Sign Up</a></li>
+        <li><a href="InitialHomePage.html">Log Out</a></li>
     </ul>
 </div>
 <body>
     <div class="NavBarGap"></div>
-    <!-- Buttons at the top -->
-    <div class="buttons-container">
-        <button class="button">Registered Events</button>
-        <button class="button">Create Event</button>
-        <button class="button">View Map</button>
-    </div>
 
     <!-- Header and dropdown -->
     <div class="event-feed">
-        <span class="event-feed-text">Event Feed:</span>
+        <span class="event-feed-text">Events you are registered for:</span>
         <div class="dropdown-container">
             <button class="button dropdown-button">Sort By ▼</button>
             <ul class="dropdown-menu">
@@ -50,8 +43,8 @@
                 <span>📍 Location: IM Fields</span>
             </div>
             <div class="event-actions">
-                <button class="event-button">Event Details</button>
-                <button class="event-button">Join Event</button>
+                <button class="event-button"><a href="EventPage.html">Event Details</a></button>
+                <button class="event-button">Leave Event</button>
             </div>
         </div>
 
@@ -64,37 +57,11 @@
             </div>
             <div class="event-actions">
                 <button class="event-button">Event Details</button>
-                <button class="event-button">Join Event</button>
-            </div>
-        </div>
-
-        <!-- Basketball Event -->
-        <div class="event">
-            <div class="event-title">Basketball Pickup</div>
-            <div class="event-info">
-                <span>📅 Date: November 27, 2024 | Time: 7:00 PM</span>
-                <span>📍 Location: Weinstein Center</span>
-            </div>
-            <div class="event-actions">
-                <button class="event-button">Event Details</button>
-                <button class="event-button">Join Event</button>
+                <button class="event-button">Leave Event</button>
             </div>
         </div>
     </div>
 </body>
-<script>
-    // Redirect to "loginfirst.html" when screen is clicked
-    document.addEventListener('click', function (event) {
-        // Check if the clicked element is not Log In or Sign Up buttons
-        let isLoginSignup =
-            event.target.closest('a[href="login.html"]') ||
-            event.target.closest('a[href="signup.html"]');
-
-        if (!isLoginSignup) {
-            window.location.href = 'LoginFirst.html';
-        }
-    });
-</script>
 </html>
 
 
