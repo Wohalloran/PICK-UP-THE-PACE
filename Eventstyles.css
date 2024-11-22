@@ -56,7 +56,44 @@ body {
     z-index: 2;
     position: absolute;
     padding: 2rem;
-    top: 20%; 
-    right: 10%; 
-    width: 50%; 
+    top: 40%; 
+    right: 25%; 
+    width: 30%; 
+}
+
+.eventTitle{
+    font-weight: bold;
+    font-size: 1.7vw;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.location{
+    font-weight: bold;
+    font-size: 1.5vw;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(166, 163, 163);
+    margin-top: 4%;
+}
+
+.time{
+    font-size: 1.5vw;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-top: 2%;
+}
+
+.description{
+    font-size: 1vw;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-top: 2%;
+}
+
+.join{
+    margin-top: 10%;
+    background-color: black;
+    color: white;
+    border-radius: 1.5rem;
+    width: 30%;
+    padding: 1vh 2vw; 
+    font-size: 1vw;
+    margin-left: 34%;
 }
