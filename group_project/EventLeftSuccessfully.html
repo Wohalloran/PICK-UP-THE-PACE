@@ -3,24 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Please log in first</title>
+    <title>Event Created Successfully</title>
     <link rel="stylesheet" href="LoginFirstStyles.css">
 </head>
 <div id="NavBar" class="NavBar"><div class="logo">Pick Up <br> ‎ ‎ ‎ The Pace</div>
     <ul class="NavSelector">
-        <li>Home</li>
+        <li><a href="HomePage.html">Home</a></li>
         <li>Settings</li>
-        <li><a href="login.html">Log In</a></li>
-        <li><a href="signup.html">Sign Up</a></li>
+        <li>Profile</li>
+        <li><a href="InitialHomePage.html">Log Out</a></li>
     </ul>
 </div>
 <body>
     <div class="NavBarGap"></div>
     <!-- Buttons at the top -->
     <div class="buttons-container">
-        <a href="LoginFirst.html" class="button">Registered Events</a>
-        <a href="LoginFirst.html" class="button">Create Event</a>
-        <a href="LoginFirst.html" class="button">View Map</a>
+        <a href="EventLeftSuccessfully.html" class="button">Registered Events</a>
+        <a href="EventLeftSuccessfully.html" class="button">Create Event</a>
+        <a href="EventLeftSuccessfully.html" class="button">View Map</a>
     </div>
 
     <!-- Header and dropdown -->
@@ -80,14 +80,14 @@
     <!-- Log in first Popup -->
     <div class="popup" id="popup">
         <div class="popup-content">
-            <p>Please sign up/log in first</p>
-            <button onclick="goToLogin()">OKAY</button>
+            <p>Event Left Successfully</p>
+            <button onclick="goToHome()">OKAY</button>
         </div>
     </div>
 </body>
 <script>
-function goToLogin() {
-    window.location.href = 'login.html';
+function goToHome() {
+    window.location.href = 'HomePage.html';
         }
 </script>
 </html>

@@ -4,7 +4,7 @@
     width: 100%; 
     margin: 0;
     padding: 2vh 4vw; 
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
     font-weight: bold;
     font-size: 1.7vw; 
     position: fixed;
@@ -13,33 +13,46 @@
     z-index: 1000; 
     box-sizing: border-box; 
     display: flex;
+    align-items: center; /* Vertically center content */
     justify-content: space-between;
-}
-
-body {
-    padding-top: calc(2vh + 2rem); 
 }
 
 .NavSelector {
     list-style-type: none; 
     margin: 0; 
     padding: 0; 
-    padding-top: 1rem;
     display: flex; 
-    gap: 3rem; 
-}
-
-.NavSelector a {
-    text-decoration: none;
-    color: inherit;
+    flex: 1;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 .NavSelector li {
-    display: inline; 
+    display: inline-block;
+}
+
+.NavSelector li a {
+    text-decoration: none;
+    color: inherit;
+    padding: 0.5rem
 }
 
 .NavSelector li a:hover {
     background-color: gray; 
+    border-radius: 5px;
+}
+
+.logo {
+    margin-right: 2rem;
+}
+
+body {
+    padding-top: calc(2vh + 2rem); 
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
 }
 
 /* padding-top: 6.3rem; optimal padding for keeping contents under the navBar */
@@ -63,7 +76,7 @@ body {
     margin-top: -20px;
 }
 .button {
-    width: 15%;
+    width: 30%;
     background-color: black;
     color: white;
     border: none;
@@ -216,6 +229,6 @@ body {
 }
 
 .popup-content button:hover {
-    background-color: #333;
+    text-decoration: underline;
 }
 

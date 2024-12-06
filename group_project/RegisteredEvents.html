@@ -5,13 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registered Events</title>
     <link rel="stylesheet" href="HomePageStyles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 </head>
 <div id="NavBar" class="NavBar"><div class="logo">Pick Up <br> ‎ ‎ ‎ The Pace</div>
     <ul class="NavSelector">
         <li><a href="HomePage.html">Home</a></li>
-        <li>Messages</li>
-        <li>Search</li>
-        <li>Notifications</li>
+        
         <li>Settings</li>
         <li>Profile</li>
         <li><a href="InitialHomePage.html">Log Out</a></li>
@@ -34,30 +33,40 @@
     </div>
 
     <!-- Scrollable list of events -->
-    <div class="scrollable-events">
-        <!-- Soccer Event -->
+    <div class="scrollable-registered-events">
         <div class="event">
-            <div class="event-title">Soccer Game</div>
+            <div class="event-title"><i class="fas fa-futbol"></i> Soccer Game</div>
             <div class="event-info">
                 <span>📅 Date: November 25, 2024 | Time: 3:00 PM</span>
                 <span>📍 Location: IM Fields</span>
             </div>
             <div class="event-actions">
-                <button class="event-button"><a href="EventPage.html">Event Details</a></button>
-                <button class="event-button">Leave Event</button>
+                <a href="EventPage.html" class="event-button">Event Details</a>
+                <a href="EventLeftSuccessfully.html" class="event-button">Leave Event</a>
             </div>
         </div>
 
-        <!-- Volleyball Event -->
         <div class="event">
-            <div class="event-title">Volleyball Match</div>
+            <div class="event-title"><i class="fas fa-volleyball-ball"></i> Volleyball Match</div>
             <div class="event-info">
                 <span>📅 Date: November 26, 2024 | Time: 5:00 PM</span>
-                <span>📍 Location: IM Beach Volleyball Court</span>
+                <span>📍 Location: P Fields</span>
             </div>
             <div class="event-actions">
-                <button class="event-button">Event Details</button>
-                <button class="event-button">Leave Event</button>
+                <a href="volleyballEvent.html" class="event-button">Event Details</a>
+                <a href="EventLeftSuccessfully.html" class="event-button">Leave Event</a>
+            </div>
+        </div>
+
+        <div class="event">
+            <div class="event-title"><i class="fas fa-basketball-ball"></i> Basketball Pickup</div>
+            <div class="event-info">
+                <span>📅 Date: November 27, 2024 | Time: 7:00 PM</span>
+                <span>📍 Location: Weinstein Center</span>
+            </div>
+            <div class="event-actions">
+                <a href="basketballEvent.html" class="event-button">Event Details</a>
+                <a href="EventLeftSuccessfully.html" class="event-button">Leave Event</a>
             </div>
         </div>
     </div>
