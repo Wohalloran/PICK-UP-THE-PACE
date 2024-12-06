@@ -1,92 +1,74 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Create a New Event</title>
-    <link rel="stylesheet" href="styles.css" />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-
-  </head>
-  <div id="NavBar" class="NavBar"><div class="logo">Pick Up <br> The Pace</div>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Event</title>
+    <link rel="stylesheet" href="CreateEventStyles.css">
+</head>
+<div id="NavBar" class="NavBar"><div class="logo">Pick Up <br> ‎ ‎ ‎ The Pace</div>
     <ul class="NavSelector">
-        <li>Home</li>
+        <li><a href="HomePage.html">Home</a></li>
         <li>Messages</li>
         <li>Search</li>
         <li>Notifications</li>
         <li>Settings</li>
         <li>Profile</li>
-        <li>Log Out</li>
+        <li><a href="InitialHomePage.html">Log Out</a></li>
     </ul>
 </div>
-  <body>
+<body>
+    <div class="NavBarGap"></div>
     <div class="form-container">
-      <h1>CREATE A NEW EVENT</h1>
-      <p>*These fields are required</p>
-      <form>
-        <div class="form-grid">
-          <div class="form-group">
-            <label for="name">*Name:</label>
-            <input type="text" id="name" required />
-          </div>
-          <div class="form-group">
-            <label for="location">*Location:</label>
-            <input type="text" id="location" required />
-          </div>
-          <div class="form-group">
-            <label for="sport">*Sport:</label>
-            <input type="text" id="sport" required />
-          </div>
+        <h1>Create Event</h1>
+        <form>
+            <div class="form-row">
+                <div class="form-column">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Event Name">
 
-          <div class="form-group">
-            <label for="players">*Number of Players:</label>
-            <div class="player-controls">
-              <button
-                type="button"
-                class="minus-button"
-                onclick="decrementPlayers()"
-              >
-                -
-              </button>
-              <input
-                type="number"
-                id="players"
-                value="0"
-                min="0"
-                onchange="handlePlayerChange()"
-              />
-              <button
-                type="button"
-                class="plus-button"
-                onclick="incrementPlayers()"
-              >
-                +
-              </button>
+                    <label for="sport">Sport</label>
+                    <select id="sport" name="sport">
+                        <option value="" disabled selected>Select Sport</option>
+                        <option value="soccer">Soccer</option>
+                        <option value="volleyball">Volleyball</option>
+                        <option value="basketball">Basketball</option>
+                        <option value="tennis">Tennis</option>
+                        <option value="other">Other</option>
+                    </select>
+
+                    <label for="date">Date</label>
+                    <input type="date" id="date" name="date">
+
+                    <label for="time">Time</label>
+                    <input type="time" id="time" name="time">
+                </div>
+
+                <div class="form-column">
+                    <label for="location">Location</label>
+                    <input type="text" id="location" name="location" placeholder="Event Location">
+
+                    <label for="players">Number of Players</label>
+                    <input type="number" id="players" name="players" placeholder="e.g., 10">
+
+                    <label for="skill">Skill Level</label>
+                    <select id="skill" name="skill">
+                        <option value="" disabled selected>Select Skill Level</option>
+                        <option value="beginner">Beginner</option>
+                        <option value="intermediate">Intermediate</option>
+                        <option value="advanced">Advanced</option>
+                    </select>
+
+                    <label for="instructions">Special Instructions</label>
+                    <textarea id="instructions" name="instructions" placeholder="Optional instructions"></textarea>
+                </div>
             </div>
-          </div>
-          <div class="form-group">
-            <label for="date">*Date:</label>
-            <input type="date" id="date" required />
-          </div>
-          <div class="form-group">
-            <label for="skill">*Skill level:</label>
-            <input type="text" id="skill" required />
-          </div>
-          <div class="form-group">
-            <label for="time">*Time:</label>
-            <input type="time" id="time" required />
-          </div>
-          <div class="form-group">
-            <label for="instructions">Special Instructions:</label>
-            <textarea id="instructions"></textarea>
-          </div>
-        </div>
-        <div class="form-buttons">
-          <button type="reset" class="cancel-button">Cancel</button>
-          <button type="submit" class="create-button">Create Event</button>
-        </div>
-      </form>
+
+            <div class="form-actions">
+                <a href="HomePage.html" class="cancel-button">Cancel</a>
+                <a href="EventCreatedSuccessfully.html" class="create-button">Create Event</a>
+            </div>
+        </form>
     </div>
-    <script src="script.js"></script>
-  </body>
+</body>
 </html>

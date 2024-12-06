@@ -1,0 +1,121 @@
+.NavBar {
+    color: white;
+    background-color: black;
+    width: 100%; 
+    margin: 0;
+    padding: 2vh 4vw; 
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 2vw; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000; 
+    box-sizing: border-box; 
+    display: flex;
+    justify-content: space-between;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    padding-top: calc(2vh + 2rem); 
+}
+
+.NavSelector {
+    list-style-type: none; 
+    margin: 0; 
+    padding: 0; 
+    padding-top: 1rem;
+    display: flex; 
+    gap: 3rem; 
+}
+
+.NavSelector a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.NavSelector li {
+    display: inline; 
+}
+
+.NavSelector li a:hover {
+    background-color: gray; 
+}
+
+/* padding-top: 6.3rem; optimal padding for keeping contents under the navBar */
+.NavBarGap{
+    padding-top: 6.3rem;
+}
+
+.signup-container {
+    display: grid;
+    grid-template-areas:
+        "title title"
+        "message message"
+        "username email"
+        "password retypepassword"
+        "buttons buttons";
+    grid-gap: 1rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    width: 65%;
+    margin:auto;
+    font-family: avenir, sans-serif;
+    align-content: center;
+    margin-top: -20px;    
+}
+
+.signup-title {
+    grid-area: title;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+.signup-message {
+    grid-area: message;
+    text-align: center;
+    font-size: 1rem;
+    color: gray;
+}
+
+.signup-field {
+    display: flex;
+    flex-direction: column;
+}
+
+.signup-field label {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.signup-field input {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid lightgray;
+    border-radius: 0.5rem;
+}
+
+.signup-buttons {
+    grid-area: buttons;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cancel-btn, .signup-btn {
+    display: inline-block;
+    padding: 0.75rem 2rem;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    background-color: lightgray;
+    color: black;
+}
